@@ -6,7 +6,6 @@ from django.conf import settings
 urlpatterns = [
 
     url(r'^$', views.home_projects, name='homePage'),
-    # url(r'^search/', views.search_users, name='search_users'),
     url(r'^search/', views.search_projects, name='search_projects'),
     url(r'^image(\d+)', views.project, name='project'),
     url(r'^users/', views.user_list, name='user_list'),
@@ -22,12 +21,9 @@ urlpatterns = [
     url(r'^api/profile/$', views.ProfileList.as_view()),
     url(r'api/profile/profile-id/(?P<pk>[0-9]+)/$',
         views.ProfileDescription.as_view()),
-    # ex: /
     url(r'^$', views.review_list, name='review_list'),
-    # ex: /review/5/
     url(r'^review/(?P<review_id>[0-9]+)/$',
         views.review_detail, name='review_detail'),
-    # ex: /project/
     url(r'^project$', views.project_list, name='project_list'),
 ]
 
