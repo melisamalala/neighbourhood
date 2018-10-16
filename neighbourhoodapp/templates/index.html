@@ -4,15 +4,52 @@
 {% block content %}
 <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
 
-<div class="container">
+<div class="container text-center m-0">
 
-  <div class="jumbotron text-center mb-0" id="jumbo" style="background-color:white;">
+<section class="slide-wrapper text-center">
+    <div class="container">
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="fill" style=" background-color:#48c3af;">
+                      <h1 class="animate rotateOut loop" style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
+                      <br>
+                      <h1 style="font-family: 'Dosis', cursive; color:white;font-size:25px">Get Updates About Your
+                        Neighbourhood</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fill" style=" background-color:#b33f4a;"><h1 style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
+                      <br>
+                      <h1 style="font-family: 'Dosis', cursive; color:white;font-size:25px">Get Updates About Your
+                        Neighbourhood</h1></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fill" style=" background-color:#7fc2f4;"><h1 style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
+                      <br>
+                      <h1 style="font-family: 'Dosis', cursive; color:white;font-size:25px">Get Updates About Your
+                        Neighbourhood</h1></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fill" style=" background-color:#e47794;"><h1 style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
+                      <br>
+                      <h1 style="font-family: 'Dosis', cursive; color:white;font-size:25px">Get Updates About Your
+                        Neighbourhood</h1></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <h1 class="h1" style="font-family: 'Dosis', cursive; color:blue;font-size:70px;"> The Neighbourhood</h1>
-    <p class="h1" style="font-family: 'Dosis', cursive; color:black;font-size:25px;">Get Updates About Your Neighbourhood</p>
-  </div>
 </div>
-
 
 <div class="jumbotron itson mb-3 ">
 
@@ -32,7 +69,6 @@
     </div>
     {% endfor %}
   </div>
-
 
 </div>
 
