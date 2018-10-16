@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% block content %}
+<link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
+
+<div class="container">
+
+  <div class="jumbotron text-center mb-0" id="jumbo" style="background-color:white;">
+
+    <h1 class="h1" style="font-family: 'Dosis', cursive; color:blue;font-size:70px;">Awards</h1>
+    <p class="h1" style="font-family: 'Dosis', cursive; color:black;font-size:25px;">View projects, submit your own projects and have them reviewed.</p>
+  </div>
+</div>
+
+
+<div class="jumbotron itson mb-3 ">
+
+  <div class="card-deck flex-wrap">
+    {% for project in projects %}
+    <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
+
+        <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"
+          id="eachimage1" size="100px200"></a>
+      <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
+     <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
+     <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
+       <a href="{{ project.project_url}}">Visit Site</a></span>
+      <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>
+  <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a href="{% url 'project' project.id %}">View Project</a></span>
+
+    </div>
+    {% endfor %}
+  </div>
+
+
+</div>
+
+<div class="jumbotron text-center mt-3" style="background-color:white;font-family: 'Dosis', sans-serif;">
+
+  <form action="{%url 'homePage'%}" method="post">
+    {%csrf_token%} {% bootstrap_form letterForm %}
+    <input type="submit" style="background-color:white;" value="Subscribe To Awards ">
+  </form>
+
+</div>
+
+
+<div class="container">
+  <div class="col-md-12">
+    <div class="footer text-center">
+      <ul id="footer1">
+        <li>ABOUT US</li>
+        <li>SUPPORT</li>
+        <li>PRESS</li>
+        <li>API</li>
+        <li>JOBS</li>
+        <li>PRIVACY</li>
+        <li>TERMS</li>
+        <li>DIRECTORY</li>
+        <li>PROFILES</li>
+        <li>HASHTAGS</li>
+        <li>LANGUAGE</li>
+        <br>
+
+        <li style="font-size:10px;"> <strong>© 2018 MELISSA MALALA</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block scripts %} {{block.super}}
+<script type="text/javascript" src="{%static 'js/scripts.js'%}"></script>
+
+{% endblock %}

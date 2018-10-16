@@ -1,0 +1,67 @@
+{%extends 'base.html'%} {% block content %}
+<div class="container">
+
+  <div class="row">
+    {% if profiles %}
+    <h2 style="font-family: 'Kodchasan', sans-serif;color:white;"> Here are profiles of your search term: {{message}}</h2>
+    {% else %}
+    <h2 style="font-family: 'Kodchasan', sans-serif;color:white;"> It appears that there are 0 profiles for your search term
+      {{message}}, please try again. </h2>
+    {% endif %}
+
+  </div>
+
+  <h1 style="font-family: 'Dosis', sans-serif;"><strong> These are the projects found </strong></h1>
+
+  {% for profile in profiles %}
+  <p style="font-family: 'Dosis', sans-serif;"><a href="{% url 'individual_profile_page' profile.user.id %}"> {{profile.user.username}}</a></p>
+  {% endfor %}
+
+
+  <div class="row">
+
+    {% if projects %}
+    <div class="container">
+
+      <div class="card-columns">
+
+        {% for project in projects %}
+        <div class="card border-secondary">
+          <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid" id="eachimage"
+            size="100px200">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% endif %}
+  </div>
+</div>
+
+
+
+<div class="container">
+    <div class="col-md-12">
+      <div class="footer text-center">
+        <ul id="footer1">
+          <li>ABOUT US</li>
+          <li>SUPPORT</li>
+          <li>PRESS</li>
+          <li>API</li>
+          <li>JOBS</li>
+          <li>PRIVACY</li>
+          <li>TERMS</li>
+          <li>DIRECTORY</li>
+          <li>PROFILES</li>
+          <li>HASHTAGS</li>
+          <li>LANGUAGE</li>
+          <br>
+
+          <li style="font-size:10px;"> <strong>© 2018 MELISSA MALALA</strong></li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+{% endblock %}

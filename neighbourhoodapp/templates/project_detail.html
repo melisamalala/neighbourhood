@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load bootstrap4 %}{% block content %}
+
+
+<h2>{{ project.title }}</h2>
+<h5>{{ project.review_set.count }} reviews ({{ project.design_rating | floatformat }} average rating of design)</h5>
+<h5>{{ project.review_set.count }} reviews ({{ project.content_rating | floatformat }} average rating of content)</h5>
+<h5>{{ project.review_set.count }} reviews ({{ project.usability_rating | floatformat }} average rating of usability)</h5>
+
+{% block content %}
+<h3>Recent reviews</h3>
+
+{% if project.review_set.all %}
+<div class="row">
+    {% for review in project.review_set.all %}
+
+    <div class="col-xs-6 col-lg-4">
+        <em>{{ review.comment }}</em>
+        <h6>Design Rated {{ review.design_rating}} of 10 by {{ review.user }}</h6>
+        <h6>Content Rated {{ review.content_rating }} of 10 by {{ review.user }}</h6>
+        <h6>Usability Rated {{ review.usability_rating }} of 10 by {{ review.user }}</h6>
+
+    </div>
+    {% endfor %}
+
+
+</div>
+
+
+{% endblock %}

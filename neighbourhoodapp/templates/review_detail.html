@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h2><a href="{% url 'project_detail' review.project.id %}">{{ review.project.user }}</a></h2>
+{% endblock %}
+
+{% block content %}
+
+<h4>Rated {{ review.content_rating }} of 10 by
+    <a href="{% url 'individual_profile_page' review.user_name %}" >{{ review.user }}</a></h4>
+
+
+<h4>Rated {{ review.design_rating }} of 10 by
+    <a href="{% url 'individual_profile_page' review.user_name %}" >{{ review.user }}</a></h4>
+
+<h4>Rated {{ review.usability_rating }} of 10 by
+    <a href="{% url 'individual_profile_page' review.user_name %}" >{{ review.user }}</a></h4>
+<p>{{ review.comment }}</p>
+{% endblock %}

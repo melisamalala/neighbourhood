@@ -1,0 +1,88 @@
+{%extends "registration/base.html"%} {% load bootstrap4 %} {%load static%} {% block content %}
+
+<div class="container" style="background-color:#fff;
+ background-image:('../../static/photos/rawpixel-594846-unsplash.jpg')">
+  <div class="row">
+
+    <div class="col-md-6 mt-5">
+      <img class="thumbnail" src="{% static 'photos/gosh-her-voice-is-too-monotone.jpg' %}" style="height:450px;width:600px;">
+
+      <div class="card mt-5" style="width: 28rem;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="font-family: 'Dosis', cursive;">Have an account already?</h5>
+          <h2 style="color:grey;font-size:10px; font-family: 'Dosis', cursive;">By signing up, you agree to our Terms, Data Policy and Cookies Policy.</h2>
+          <a href="/accounts/login" class="btn btn-primary" style="font-family: 'Dosis', cursive;">Login</a>
+        </div>
+      </div>
+
+      <div class="card mt-5" style="width: 28rem;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="font-family: 'Dosis', cursive;">Get the app.</h5>
+          <a href="https://itunes.apple.com/ke/app/instagram/id389801252?mt=8"><img src="{% static 'photos/disruptive-innovation.jpg' %}"
+              style="height:90px;width:200px;"></a>
+          <a href="https://play.google.com/store?hl=en"><img src="{% static 'photos/food-blogging.jpg' %}" style="height:90px;width:200px;"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-5 mt-5">
+      {% if form.errors %}
+      <p> Some Information Might be Incorrect </p>
+      {% endif %}
+      <div class="card border-primary mb-4" style="max-width:25rem;">
+
+        <div class="card-header text-center">
+          <h1 class="h1" style="font-family: 'Dosis', cursive; color:blue;font-size:65px;">Awards</h1>
+          <h3 class="text-center" style="font-family: 'Dosis', cursive;color:grey;font-size:15px;">Sign up to review and rate website projects</h3>
+        </div>
+        <div class="card-body text-primary">
+
+          <form action="/accounts/register/" method="post" style="font-family: 'Dosis', cursive;">
+            {% csrf_token %} {% bootstrap_form form %}
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-sm" value="Sign Up">
+            </div>
+
+            <input type="hidden" name="next" value="{{next}}">
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <!-- empty div -->
+
+
+  <div class="container">
+    <div class="col-md-12">
+      <div class="footer text-center">
+        <ul id="footer1">
+          <li>ABOUT US</li>
+          <li>SUPPORT</li>
+          <li>PRESS</li>
+          <li>API</li>
+          <li>JOBS</li>
+          <li>PRIVACY</li>
+          <li>TERMS</li>
+          <li>DIRECTORY</li>
+          <li>PROFILES</li>
+          <li>HASHTAGS</li>
+          <li>LANGUAGE</li>
+          <br>
+
+          <li style="font-size:10px;"> <strong>© 2018 MELISSA MALALA</strong></li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

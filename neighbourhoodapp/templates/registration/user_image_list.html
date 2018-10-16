@@ -1,0 +1,53 @@
+{%extends "registration/base.html"%}
+{% load bootstrap4 %} {%load static%}
+{% load staticfiles %}
+{% block content %}
+
+<div class="jumbotron text-center" style="background-color:white;">
+    <h1 style="font-family: 'Dosis', sans-serif;"> Your Profile Page </h1>
+
+    {% if profile.profile_pic %}
+     <img src="{{user.profile.profile_pic.url | default_if_none:'#'}}" class="img-thumbnail" id="eachimage1" style="height:200px;width:150px;"></a>
+   {% endif %}
+    <p style="font-family: 'Dosis', sans-serif;">{{user.profile.bio}}</p>
+    <p style="font-family: 'Dosis', sans-serif;">{{user.profile.contact}}</p>
+    <button class="btn btn-lg btn-success" style="font-family: 'Dosis', sans-serif;"><a href=" {%url 'edit_profile'%}">Edit Profile</a></button>
+    </div>
+
+<div class="container">
+  <div class="card-columns">
+    {% for project in projects %}
+
+    <div class="card border-secondary"><a href="{% url 'image' image.id %}">
+        <img src="{{project.project_image.url }}" class="img-fluid" id="eachimage"
+          size="100px200"></a>
+ <p style="font-family: 'Dosis', sans-serif;"> Caption : {{ project.description}}</p>
+      <p style="font-family: 'Dosis', sans-serif;">Posted by : {{ project.user}}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container">
+    <div class="col-md-12">
+      <div class="footer text-center">
+        <ul id="footer1">
+          <li>ABOUT US</li>
+          <li>SUPPORT</li>
+          <li>PRESS</li>
+          <li>API</li>
+          <li>JOBS</li>
+          <li>PRIVACY</li>
+          <li>TERMS</li>
+          <li>DIRECTORY</li>
+          <li>PROFILES</li>
+          <li>HASHTAGS</li>
+          <li>LANGUAGE</li>
+          <br>
+          <li style="font-size:10px;"> <strong>© 2018 MELISSA MALALA</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
