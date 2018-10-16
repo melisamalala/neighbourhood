@@ -7,7 +7,7 @@
 <div class="container text-center m-0">
 
 <section class="slide-wrapper text-center">
-    <div class="container">
+    <div class="container" id="container1">
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -24,6 +24,24 @@
                       <br>
                       <h1 style="font-family: 'Dosis', cursive; color:white;font-size:25px">Get Updates About Your
                         Neighbourhood</h1>
+
+                        <div class="card-columns">
+    {% for project in projects %}
+    <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
+
+        <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"
+          id="eachimage1" size="100px200"></a>
+      <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
+     <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
+     <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
+       <a href="{{ project.project_url}}">Visit Site</a></span>
+      <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>
+  <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a href="{% url 'project' project.id %}">View Project</a></span>
+
+    </div>
+    {% endfor %}
+  </div>
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -51,26 +69,26 @@
 
 </div>
 
-<div class="jumbotron itson mb-3 ">
+<!--<div class="jumbotron itson mb-3 ">-->
 
-  <div class="card-deck flex-wrap">
-    {% for project in projects %}
-    <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
+  <!--<div class="card-deck flex-wrap">-->
+    <!--{% for project in projects %}-->
+    <!--<div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">-->
 
-        <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"
-          id="eachimage1" size="100px200"></a>
-      <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
-     <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
-     <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
-       <a href="{{ project.project_url}}">Visit Site</a></span>
-      <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>
-  <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a href="{% url 'project' project.id %}">View Project</a></span>
+        <!--<img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"-->
+          <!--id="eachimage1" size="100px200"></a>-->
+      <!--<p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>-->
+     <!--<p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>-->
+     <!--<span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">-->
+       <!--<a href="{{ project.project_url}}">Visit Site</a></span>-->
+      <!--<span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>-->
+  <!--<span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a href="{% url 'project' project.id %}">View Project</a></span>-->
 
-    </div>
-    {% endfor %}
-  </div>
+    <!--</div>-->
+    <!--{% endfor %}-->
+  <!--</div>-->
 
-</div>
+<!--</div>-->
 
 <div class="jumbotron text-center mt-3" style="background-color:white;font-family: 'Dosis', sans-serif;">
 
@@ -82,7 +100,7 @@
 </div>
 
 
-<div class="container">
+<div class="container id="container2"">
   <div class="col-md-12">
     <div class="footer text-center">
       <ul id="footer1">

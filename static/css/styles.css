@@ -35,12 +35,6 @@ li a {
 }
 
 
-body{
-    margin-top: 100px;
-    width:100%;
-    height:100%;
-
-}
 .carousel-inner,.carousel,.carousel-item,.container,.fill {
     height:100%;
     min-height:400px;
@@ -100,3 +94,16 @@ body{
 animation-iteration-count:infinite !important;
 
 }
+
+
+#nav{
+margin:0!important;
+}
+
+#container{
+
+height: 1500px! important;
+}
+
+#container2{
+position:absolute; bottom:0;}
