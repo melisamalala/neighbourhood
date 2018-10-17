@@ -4,6 +4,7 @@ a {
 
 body {
   background-color: white;
+  height:100%;
 }
 
 #victor {
@@ -34,10 +35,15 @@ li a {
     min-width: 33%;
 }
 
+.img {
+    max-height: 55%;
+}
+
+
 
 .carousel-inner,.carousel,.carousel-item,.container,.fill {
-    height:100%;
-    min-height:400px;
+    height:auto;
+
     width:100%;
     background-position:center center;
     background-size:cover;
@@ -101,9 +107,9 @@ margin:0!important;
 }
 
 #container{
-
 height: 1500px! important;
 }
 
 #container2{
-position:absolute; bottom:0;}
+
+}
