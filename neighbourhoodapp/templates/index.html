@@ -129,31 +129,46 @@
   </section>
 
 
+<div class="jumbotron text-center mt-0" style="background-color:white;font-family: 'Dosis', sans-serif;">
+  <h2 style="text-align:center;font-size:40px;color:blue;"><strong>BUSINESS DIRECTORY</strong></h2>
+      <div class="card-deck">
+        {% for business in businesses %}
+        <div class="card title w-33">
+           <p style="font-size:20px;"> <a href="{% url 'business' business.id %}"><strong>Business Name:
+             <br>
+             <br>
+             {{business.business_name}}<strong> </a></p>
+        <div class="card border-secondary w-33">
+
+           <p>{{business.neighbourhood_id}} </p>
+          <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Contact Information:
+            <br>
+            {{ business.business_email_address}}</p>
+        </div>
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+</div>
+
+  <div class="jumbotron text-center mt-0" style="background-color:white;font-family: 'Dosis', sans-serif;">
+
+    <h2 style="text-align:center;font-size:40px;color:blue;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
 
 
-  <div class="jumbotron text-center mt-3" style="background-color:white;font-family: 'Dosis', sans-serif;">
+  </div>
+
+
+  <div class="jumbotron text-center mt-1" style="background-color:white;font-family: 'Dosis', sans-serif;">
 
     <form action="{%url 'homePage'%}" method="post" id="formletter">
       {%csrf_token%} {% bootstrap_form letterForm %}
       <input type="submit" style="background-color:white;" value="Subscribe To Neighbourhood ">
     </form>
 
-    <div class="jumbotron">
 
-      <div class="card-columns">
-        {% for business in businesses %}
-        <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
-
-            <img src="{{business.business_name}}" data-target="#imageModal{{business.id}}" data-toggle="modal" alt="" class="img-fluid"
-              id="eachimage1" size="100px200"></a>
-          <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ business.business_email_address}}</p>
-        </div>
-        {% endfor %}
-
-
-      </div>
-
-    </div>
 
 
     <div class="container" id="">
