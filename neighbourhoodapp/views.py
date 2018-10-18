@@ -108,6 +108,23 @@ def new_project(request):
         form = NewProjectForm()
     return render(request, 'registration/new_project.html', {"form": form})
 
+
+@login_required(login_url='/accounts/login/')
+def new_neighbourhood(request):
+    current_user = request.user
+    if request.method == 'POST':
+        form = CreateNeighbourhoodForm(request.POST, request.FILES)
+        if form.is_valid():
+            neighbourhood = form.save(commit=False)
+            neighbourhood.user = current_user
+            neighbourhood.save()
+        return redirect('homePage')
+
+    else:
+        form = CreateNeighbourhoodForm()
+    return render(request, 'registration/new_neighbourhood.html', {"form": form})
+
+
 # Viewing a single picture
 
 def user_list(request):
