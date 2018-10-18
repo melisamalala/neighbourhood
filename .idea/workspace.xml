@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eedae65e-d517-4fef-a7e2-7b57bc86fd1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbourhoodapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
           <entry key="gitignore" value="24" />
           <entry key="html" value="858" />
           <entry key="js" value="6" />
-          <entry key="py" value="826" />
+          <entry key="py" value="828" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -59,7 +59,7 @@
           <entry key="HTML" value="858" />
           <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Python" value="826" />
+          <entry key="Python" value="828" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -94,14 +94,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-393">
-              <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+            <state relative-caret-position="337">
+              <caret line="280" column="45" selection-start-line="280" selection-start-column="45" selection-end-line="280" selection-end-column="45" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1539847192681" expanded="true" signature="7572:7577" ph="..." />
+                <marker date="1539848853733" expanded="true" signature="7572:7577" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="248">
+              <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#3;n#div#0;n#nav#0;n#!!top" expanded="true" />
@@ -166,11 +166,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
+            <state relative-caret-position="73">
+              <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -181,8 +181,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
+            <state relative-caret-position="274">
+              <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -242,11 +242,11 @@
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/tests.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/admin.py" />
-        <option value="$PROJECT_DIR$/neighbourhoodapp/models.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/registration/registration_form.html" />
-        <option value="$PROJECT_DIR$/neighbourhoodapp/views.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/search.html" />
+        <option value="$PROJECT_DIR$/neighbourhoodapp/models.py" />
+        <option value="$PROJECT_DIR$/neighbourhoodapp/views.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/urls.py" />
       </list>
     </option>
@@ -382,7 +382,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.27719298" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.22807017" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
@@ -605,17 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-393">
-          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1539847192681" expanded="true" signature="7572:7577" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/registration/registration_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -633,16 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,8 +652,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="248">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#3;n#div#0;n#nav#0;n#!!top" expanded="true" />
@@ -685,10 +664,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neighbourhoodapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
+        <state relative-caret-position="73">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="280" column="45" selection-start-line="280" selection-start-column="45" selection-end-line="280" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1539848853733" expanded="true" signature="7572:7577" ph="..." />
           </folding>
         </state>
       </provider>

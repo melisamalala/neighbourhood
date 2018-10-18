@@ -266,7 +266,7 @@ class Profile(models.Model):
 class Business(models.Model):
     business_name = models.CharField(max_length=30, null=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, related_name="business")
-    neighbourhood_id = models.ForeignKey(Neighbourhood)
+    neighbourhood_id = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE,related_name="neighbourhood",null=True,blank=True)
     business_email_address = models.CharField(max_length=200, null = True)
 
     def __str__(self):
