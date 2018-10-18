@@ -158,8 +158,28 @@
     <h2 style="text-align:center;font-size:40px;color:blue;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
 
 
-  </div>
+     <div class="card-deck">
+        {% for business in businesses %}
+        <div class="card title w-33">
+           <p style="font-size:20px;"> <a href="{% url 'business' business.id %}"><strong>Business Name:
+             <br>
+             <br>
+             {{business.business_name}}<strong> </a></p>
+        <div class="card border-secondary w-33">
 
+           <p>{{business.neighbourhood_id}} </p>
+          <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Contact Information:
+            <br>
+            {{ business.business_email_address}}</p>
+        </div>
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+
+  </div>
 
   <div class="jumbotron text-center mt-1" style="background-color:white;font-family: 'Dosis', sans-serif;">
 
@@ -167,9 +187,6 @@
       {%csrf_token%} {% bootstrap_form letterForm %}
       <input type="submit" style="background-color:white;" value="Subscribe To Neighbourhood ">
     </form>
-
-
-
 
     <div class="container" id="">
       <div class="col-md-12">
