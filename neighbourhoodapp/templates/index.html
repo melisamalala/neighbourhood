@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% load bootstrap4 %} {% load static %} {% block content %}
 <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
+
 <div class="container container-fluid text-center m-0">
 
   <section class="slide-wrapper text-center" id="section" style="padding:0px;">
@@ -127,59 +128,60 @@
       </div>
     </div>
   </section>
+</div>
 
 
-<div class="jumbotron text-center mt-0" style="background-color:white;font-family: 'Dosis', sans-serif;">
+<div class="jumbotron text-center mt-3 mb-3" style="background-color:white;font-family: 'Dosis', sans-serif;">
   <h2 style="text-align:center;font-size:40px;color:blue;"><strong>BUSINESS DIRECTORY</strong></h2>
-      <div class="card-deck">
+      <div class="card-deck d-flex">
         {% for business in businesses %}
-        <div class="card title w-33">
-           <p style="font-size:20px;"> <a href="{% url 'business' business.id %}"><strong>Business Name:
-             <br>
-             <br>
-             {{business.business_name}}<strong> </a></p>
-        <div class="card border-secondary w-33">
+        <div class="card w-33">
+            <div class="card-title">
+              <p style="font-size:20px;"> <a href="{% url 'business' business.id %}"><strong>Business Name:</strong>
+                <br>
+                <br>
+                <strong> {{business.business_name}}</strong> </a></p>
+            </div>
+            <div class="card-body border-info w-33">
 
-           <p>{{business.neighbourhood_id}} </p>
-          <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Contact Information:
-            <br>
-            {{ business.business_email_address}}</p>
+              <p>{{business.neighbourhood_id}} </p>
+              <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Contact Information:
+                <br>
+                {{ business.business_email_address}}
+              </p>
+            </div>
         </div>
         {% endfor %}
 
-      </div>
 
     </div>
 
 </div>
 
-  <div class="jumbotron text-center mt-0" style="background-color:white;font-family: 'Dosis', sans-serif;">
-
-    <h2 style="text-align:center;font-size:40px;color:blue;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
 
 
-     <div class="card-deck">
-        {% for business in businesses %}
-        <div class="card title w-33">
-           <p style="font-size:20px;"> <a href="{% url 'business' business.id %}"><strong>Business Name:
-             <br>
-             <br>
-             {{business.business_name}}<strong> </a></p>
-        <div class="card border-secondary w-33">
+<div class="jumbotron text-center mt-3 mb-3" style="background-color:white;font-family: 'Dosis', sans-serif;">
+  <h2 style="text-align:center;font-size:40px;color:blue;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
+      <div class="card-deck d-flex">
+        {% for neighbour in neighbourhoods %}
+        <div class="card w-33">
+            <div class="card-title">
+              <p style="font-size:20px;"> <a href="{% url 'neighbourhood' neighbourhood.id %}"><strong>Neighbourhood Name:</strong>
+                <br>
+                <strong> {{neighbourhood.neighbourhood_name}}</strong> </a></p>
+            </div>
+            <div class="card-body border-info w-33">
 
-           <p>{{business.neighbourhood_id}} </p>
-          <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Contact Information:
-            <br>
-            {{ business.business_email_address}}</p>
+              <p>{{neighbourhood.neighbourhood_location}} </p>
+              <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Resident Population:
+                <br>
+                {{ neighbourhood.population}}
+              </p>
+            </div>
         </div>
         {% endfor %}
-
-      </div>
-
     </div>
-
-
-  </div>
+</div>
 
   <div class="jumbotron text-center mt-1" style="background-color:white;font-family: 'Dosis', sans-serif;">
 

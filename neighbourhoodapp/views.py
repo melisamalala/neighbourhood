@@ -18,6 +18,12 @@ def home_projects (request):
     else:
         businesses = Business.objects.all()
 
+    if request.GET.get('search_term'):
+        neighbourhoods = Neighbourhood.search_neighbourhood(request.GET.get('search_term'))
+
+    else:
+        neighbourhoods = Neighbourhood.objects.all()
+
 
     if request.GET.get('search_term'):
         projects = Project.search_project(request.GET.get('search_term'))
@@ -40,8 +46,9 @@ def home_projects (request):
             HttpResponseRedirect('home_projects')
 
 
-    return render(request, 'index.html', {'projects':projects, 'letterForm':form, 'businesses':businesses})
-
+    return render(request, 'index.html', {'projects':projects, 'letterForm':form,
+                                          'businesses':businesses,
+                                          'neighbourhoods':neighbourhoods})
 
 
 def business(request, id):
@@ -53,6 +60,17 @@ def business(request, id):
         raise Http404()
 
     return render(request, 'business.html', {"business": business})
+
+def neighbourhood(request, id):
+
+    try:
+        neighbourhood = Neighbourhood.objects.get(pk = id)
+
+    except DoesNotExist:
+        raise Http404()
+
+    return render(request, 'neighbourhood.html', {"neighbourhood": neighbourhood})
+
 
 def project(request, id):
 

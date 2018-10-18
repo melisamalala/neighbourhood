@@ -9,7 +9,8 @@ urlpatterns = [
     url(r'^search/', views.search_businesses, name='search_businesses'),
 # url(r'^join/', views.join_neighbourhood, name='join_neighbourhood'),
     url(r'^image(\d+)', views.project, name='project'),
-url(r'^business(\d+)', views.business, name='business'),
+    url(r'^business(\d+)', views.business, name='business'),
+    url(r'^neighbourhood/(\d+)', views.neighbourhood, name='neighbourhood'),
     url(r'^users/', views.user_list, name='user_list'),
 
     url(r'^new/image$', views.new_image, name='new_image'),
