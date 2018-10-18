@@ -86,40 +86,6 @@ class Project(models.Model):
         return self.title
 
 
-class Profile(models.Model):
-    class Meta:
-        db_table = 'profile'
-
-    bio = models.TextField(max_length=200, null=True, blank=True, default="bio")
-    profile_pic = models.ImageField(upload_to='picture/', null=True, blank=True, default=0)
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, related_name="profile")
-    project = models.ForeignKey(Project, null=True)
-    contact = models.IntegerField(default=0)
-
-    def create_user_profile(sender, instance, created, **kwargs):
-        if created:
-            Profile.objects.create(user=instance)
-
-    post_save.connect(create_user_profile, sender=User)
-
-    def save_profile(self):
-        self.save()
-
-    def delete_profile(self):
-        self.delete()
-
-    @classmethod
-    def search_users(cls, search_term):
-        profiles = cls.objects.filter(user__username__icontains=search_term)
-        return profiles
-
-    @property
-    def image_url(self):
-        if self.profile_pic and hasattr(self.profile_pic, 'url'):
-            return self.profile_pic.url
-
-    def __str__(self):
-        return self.user.username
 
 
 class Image(models.Model):
@@ -210,3 +176,90 @@ class Review(models.Model):
 class NewsLetterRecipients(models.Model):
     name = models.CharField(max_length=30)
     email = models.EmailField()
+
+
+class Neighbourhood(models.Model):
+    neighbourhood_name = models.CharField(max_length=30)
+    neighbourhood_location = models.ForeignKey(Location)
+    occupants_count= models.IntegerField()
+
+    def __str__(self):
+        return self.neighbourhood_name
+
+    def save_neighbourhood(self):
+        self.save()
+
+    @classmethod
+    def delete_neighbourhood_by_id(cls, id):
+        neighbourhoods = cls.objects.filter(pk=id)
+        neighbourhoods.delete()
+
+    @classmethod
+    def get_neighbourhood_by_id(cls, id):
+        neighbourhoods = cls.objects.get(pk=id)
+        return neighbourhoods
+
+    @classmethod
+    def filter_by_location(cls, location):
+        neighbourhoods = cls.objects.filter(location=location)
+        return neighbourhoods
+
+    @classmethod
+    def search_neighbourhood(cls, search_term):
+        neighbourhoods = cls.objects.filter(neighbourhood_name__icontains=search_term)
+        return neighbourhoods
+
+    @classmethod
+    def update_neighbourhood(cls, id):
+        neighbourhoods = cls.objects.filter(id=id).update(id=id)
+        return neighbourhoods
+
+    @classmethod
+    def update_neighbourhood(cls, id):
+        neighbourhoods = cls.objects.filter(id=id).update(id=id)
+        return neighbourhoods
+
+    # @classmethod
+    # def update_occupants(cls, id):
+    #     neighbourhoods = cls.objects.filter(id=id).update(id=id)
+    #     return neighbourhoods
+    #
+
+class Profile(models.Model):
+    class Meta:
+        db_table = 'profile'
+
+    bio = models.TextField(max_length=200, null=True, blank=True, default="bio")
+    profile_pic = models.ImageField(upload_to='picture/', null=True, blank=True, default=0)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, related_name="profile")
+    project = models.ForeignKey(Project, null=True)
+    contact = models.IntegerField(default=0)
+    email= models.TextField(max_length=200, null=True, blank=True, default=0)
+    neighbourhood_id = models.ForeignKey(Neighbourhood, null=True)
+
+    def create_user_profile(sender, instance, created, **kwargs):
+        if created:
+            Profile.objects.create(user=instance)
+
+    post_save.connect(create_user_profile, sender=User)
+
+    def save_profile(self):
+        self.save()
+
+    def delete_profile(self):
+        self.delete()
+
+    @classmethod
+    def search_users(cls, search_term):
+        profiles = cls.objects.filter(user__username__icontains=search_term)
+        return profiles
+
+    @property
+    def image_url(self):
+        if self.profile_pic and hasattr(self.profile_pic, 'url'):
+            return self.profile_pic.url
+
+    def __str__(self):
+        return self.user.username
+
+
