@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eedae65e-d517-4fef-a7e2-7b57bc86fd1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbourhoodapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +27,7 @@
           <entry key="html" value="14" />
           <entry key="js" value="2" />
           <entry key="md" value="3" />
-          <entry key="py" value="23" />
+          <entry key="py" value="24" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
@@ -39,7 +38,7 @@
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="23" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -50,7 +49,7 @@
           <entry key="gitignore" value="24" />
           <entry key="html" value="673" />
           <entry key="js" value="6" />
-          <entry key="py" value="473" />
+          <entry key="py" value="688" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -59,7 +58,7 @@
           <entry key="HTML" value="673" />
           <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Python" value="473" />
+          <entry key="Python" value="688" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -106,11 +105,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="237" column="65" selection-start-line="237" selection-start-column="65" selection-end-line="237" selection-end-column="65" />
+            <state relative-caret-position="116">
+              <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <marker date="1539847192681" expanded="true" signature="7572:7577" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/neighbourhoodapp/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -127,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="30" column="87" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="87" />
+            <state relative-caret-position="558">
+              <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -175,15 +184,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runtime.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -218,7 +218,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/neighbourhoodproject/neighbourhoodproject/settings.py" />
-        <option value="$PROJECT_DIR$/neighbourhoodapp/tests.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/forms.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/email.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/email/neighbourhoodemail.html" />
@@ -237,6 +236,7 @@
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html" />
         <option value="$PROJECT_DIR$/static/css/styles.css" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" />
+        <option value="$PROJECT_DIR$/neighbourhoodapp/tests.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/admin.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/models.py" />
       </list>
@@ -373,7 +373,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.522807" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.6263158" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
@@ -398,13 +398,6 @@
             <caret line="21" selection-start-line="21" selection-end-line="21" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="64" lean-forward="true" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -642,16 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="30" column="87" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="87" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="994">
@@ -659,12 +642,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/neighbourhoodapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="237" column="65" selection-start-line="237" selection-start-column="65" selection-end-line="237" selection-end-column="65" />
+        <state relative-caret-position="116">
+          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <marker date="1539847192681" expanded="true" signature="7572:7577" ph="..." />
           </folding>
         </state>
       </provider>
