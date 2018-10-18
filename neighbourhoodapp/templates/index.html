@@ -3,7 +3,6 @@
 {% load static %}
 {% block content %}
 <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
-
 <div class="container container-fluid text-center m-0">
 
 <section class="slide-wrapper text-center" id="section" style="padding:0px;">
@@ -45,7 +44,6 @@
     {% endfor %}
 
   </div>
-
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -130,7 +128,7 @@
 
 <div class="jumbotron text-center mt-3" style="background-color:white;font-family: 'Dosis', sans-serif;">
 
-  <form action="{%url 'homePage'%}" method="post">
+  <form action="{%url 'homePage'%}" method="post" id="formletter">
     {%csrf_token%} {% bootstrap_form letterForm %}
     <input type="submit" style="background-color:white;" value="Subscribe To Neighbourhood ">
   </form>

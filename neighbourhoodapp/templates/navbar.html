@@ -15,12 +15,12 @@
     <div class="col-sm-6 col-md-6">
       {% if user.is_authenticated %}
 
-      <li style="font-family: 'Dosis', sans-serif;">
-        <a href="{%url 'edit_profile'%}">Edit Profile</a>
-      </li>
+      <!--<li style="font-family: 'Dosis', sans-serif;">-->
+        <!--<a href="{%url 'edit_profile'%}">Edit Profile</a>-->
+      <!--</li>-->
 
       <li style="font-family: 'Dosis', sans-serif;">
-        <a href="{% url 'individual_profile_page' user.id %}">My Profile</a>
+        <a href="{% url 'individual_profile_page' user.id %}">Profile</a>
       </li>
                    <li style="font-family: 'Dosis', sans-serif;">
                     <a href="{%url 'new_project'%}">Post News</a>
@@ -28,9 +28,6 @@
       <li style="font-family: 'Dosis', sans-serif;">
                     <a href="{%url 'new_neighbourhood'%}">Create Neighbourhood</a>
                   </li>
-      <li style="font-family: 'Dosis', sans-serif;">
-        <a href="/accounts/password/change">Change Password</a>
-      </li>
 
       <li style="font-family: 'Dosis', sans-serif;">
         <a href="/logout">Logout</a>

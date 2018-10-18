@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  $('form').submit(function(event){
+  $('formletter').submit(function(event){
     event.preventDefault()
-    form = $("form")
+    form = $("formletter")
 
     $.ajax({
       'url':'/ajax/newsletter/',

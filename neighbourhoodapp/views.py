@@ -185,7 +185,7 @@ def search_businesses(request):
         return render(request, 'search.html', {"message": message, "businesses": searched_businesses})
 
     else:
-        message = "You haven't searched for any person"
+        message = "You haven't searched for any business"
         return render(request, 'search.html', {"message": message})
 
 
