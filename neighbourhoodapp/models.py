@@ -292,7 +292,7 @@ class Business(models.Model):
         return businesses
 
     @classmethod
-    def search_business(cls, search_term):
+    def search_businesses(cls, search_term):
         businesses = cls.objects.filter(business_name__icontains=search_term)
         return businesses
 
