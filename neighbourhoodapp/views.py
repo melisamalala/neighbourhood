@@ -189,8 +189,6 @@ def new_neighbourhood(request):
 
 
 
-
-
 # Viewing a single picture
 
 def user_list(request):

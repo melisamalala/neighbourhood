@@ -12,7 +12,6 @@ urlpatterns = [
     url(r'^business(\d+)', views.business, name='business'),
     url(r'^neighbourhood/(\d+)', views.neighbourhood, name='neighbourhood'),
     url(r'^users/', views.user_list, name='user_list'),
-
     url(r'^new/image$', views.new_image, name='new_image'),
     url(r'^new/business$', views.new_business, name='new_business'),
     url(r'^new/project$', views.new_project, name='new_project'),

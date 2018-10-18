@@ -163,10 +163,10 @@
 <div class="jumbotron text-center mt-3 mb-3" style="background-color:white;font-family: 'Dosis', sans-serif;">
   <h2 style="text-align:center;font-size:40px;color:blue;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
       <div class="card-deck d-flex">
-        {% for neighbour in neighbourhoods %}
+        {% for neighbourhood in neighbourhoods %}
         <div class="card w-33">
             <div class="card-title">
-              <p style="font-size:20px;"> <a href="{% url 'neighbourhood' neighbourhood.id %}"><strong>Neighbourhood Name:</strong>
+              <p style="font-size:20px;"> <a href="/neighbourhood/{{neighbourhood.id}}"><strong>Neighbourhood Name:</strong>
                 <br>
                 <strong> {{neighbourhood.neighbourhood_name}}</strong> </a></p>
             </div>
