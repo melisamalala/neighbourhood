@@ -28,7 +28,7 @@ class ReviewAdmin(admin.ModelAdmin):
 
 class NeighbourhoodAdmin(admin.ModelAdmin):
     model = Neighbourhood
-    list_display = ( 'neighbourhood_name', 'neighbourhood_location', 'occupants_count' )
+    list_display = ( 'neighbourhood_name', 'neighbourhood_location', 'population' )
 
 admin.site.register(Location)
 admin.site.register(tags)
