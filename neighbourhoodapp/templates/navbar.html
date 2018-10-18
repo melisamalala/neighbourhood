@@ -19,26 +19,31 @@
         <!--<a href="{%url 'edit_profile'%}">Edit Profile</a>-->
       <!--</li>-->
 
-      <li style="font-family: 'Dosis', sans-serif;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:10px;">
         <a href="{% url 'individual_profile_page' user.id %}">Profile</a>
       </li>
-                   <li style="font-family: 'Dosis', sans-serif;">
+                   <li style="font-family: 'Dosis', sans-serif; font-size:10px;">
                     <a href="{%url 'new_project'%}">Post News</a>
                   </li>
-      <li style="font-family: 'Dosis', sans-serif;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:10px;">
                     <a href="{%url 'new_neighbourhood'%}">Create Neighbourhood</a>
                   </li>
 
-      <li style="font-family: 'Dosis', sans-serif;">
+
+      <li style="font-family: 'Dosis', sans-serif;font-size:10px;">
+                    <a href="{%url 'new_business'%}">Create Business</a>
+                  </li>
+
+      <li style="font-family: 'Dosis', sans-serif;font-size:10px;">
         <a href="/logout">Logout</a>
       </li>
 
       {% else %}
-      <li style="font-family: 'Dosis', sans-serif;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:10px;">
         <a class='btn btn-default' href="/accounts/login">Login</a>
       </li>
 
-      <li style="font-family: 'Dosis', sans-serif;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:10px;">
         <a class='btn btn-default' href="/accounts/register">Register</a>
       </li>
 
@@ -48,12 +53,14 @@
     <!-- Adding a search form  -->
     <div class="col-sm-4 col-md-4 navbar-right">
 
-      <form class="navbar-form" role="search" action="{% url 'search_businesses' %}">
+      <form class="navbar-form" role="search" action="{% url 'search_businesses' %}" id="navBarSearchForm">
 
-        <div class="input-group">
-          <input type="text" style="font-family: 'Dosis', sans-serif;" class="form-control mr-sm-4" placeholder="Search Business" name="business">
+        <div class="input-group" id="searcharea">
+          <input type="text" style="font-family: 'Dosis', sans-serif;font-size:10px;"
+                 class="form-control mr-sm-4 w-auto" placeholder="Search Business" name="business">
           <div class="input-group-btn">
-            <button class="btn btn-outline-primary my-2 my-sm-0" style="font-family: 'Dosis', sans-serif;" type="submit">Find</button>
+            <button class="btn btn-outline-primary my-1 my-sm-0"
+                    style="font-family: 'Dosis', sans-serif;font-size:10px;" type="submit">Find</button>
           </div>
         </div>
 
@@ -66,3 +73,10 @@
 
   </div>
 </nav>
+
+<style>
+  #searcharea {
+    width = 20vw !important;
+  }
+
+</style>
