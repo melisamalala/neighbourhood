@@ -23,7 +23,7 @@
         <a href="{% url 'individual_profile_page' user.id %}">My Profile</a>
       </li>
                    <li style="font-family: 'Dosis', sans-serif;">
-                    <a href="{%url 'new_project'%}">Submit Your Project</a>
+                    <a href="{%url 'new_project'%}">Post News</a>
                   </li>
       <li style="font-family: 'Dosis', sans-serif;">
         <a href="/accounts/password/change">Change Password</a>
@@ -51,7 +51,7 @@
       <form class="navbar-form" role="search" action="{% url 'search_projects' %}">
 
         <div class="input-group">
-          <input type="text" style="font-family: 'Dosis', sans-serif;" class="form-control mr-sm-4" placeholder="Search Project" name="project">
+          <input type="text" style="font-family: 'Dosis', sans-serif;" class="form-control mr-sm-4" placeholder="Search Business" name="project">
           <div class="input-group-btn">
             <button class="btn btn-outline-primary my-2 my-sm-0" style="font-family: 'Dosis', sans-serif;" type="submit">Find</button>
           </div>

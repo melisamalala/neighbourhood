@@ -1,20 +1,16 @@
 from __future__ import unicode_literals
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Image,Location,tags, Profile, Review, NewsLetterRecipients, Project
+from .models import *
 from django.http  import HttpResponse, Http404, HttpResponseRedirect, JsonResponse
 from django.contrib.auth.decorators import login_required
-from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
-from .forms import NewImageForm, UpdatebioForm, ReviewForm, NewProjectForm
+from .forms import *
 from .email import send_welcome_email
-from .forms import NewsLetterForm
-from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .serializers import ProjectSerializer, ProfileSerializer
+from .serializers import *
 from rest_framework import status
 from .permissions import IsAdminOrReadOnly
-
 
 
 @login_required(login_url='/accounts/login/')
@@ -159,6 +155,22 @@ def search_projects(request):
     else:
         message = "You haven't searched for any person"
         return render(request, 'search.html', {"message": message})
+
+
+def search_businesses(request):
+
+    # search for a business by its name
+    if 'business' in request.GET and request.GET["business"]:
+        search_term = request.GET.get("business")
+        searched_businesses = Business.search_businesses(search_term)
+        message = f"{search_term}"
+
+        return render(request, 'search.html', {"message": message, "businesses": searched_businesses})
+
+    else:
+        message = "You haven't searched for any person"
+        return render(request, 'search.html', {"message": message})
+
 
 # Search for an image
 def search_image(request):

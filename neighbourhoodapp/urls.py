@@ -7,6 +7,7 @@ urlpatterns = [
 
     url(r'^$', views.home_projects, name='homePage'),
     url(r'^search/', views.search_projects, name='search_projects'),
+    url(r'^search/', views.search_businesses, name='search_businesses'),
     url(r'^image(\d+)', views.project, name='project'),
     url(r'^users/', views.user_list, name='user_list'),
     url(r'^new/image$', views.new_image, name='new_image'),
