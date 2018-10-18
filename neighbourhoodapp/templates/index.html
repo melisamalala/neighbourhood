@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% load bootstrap4 %} {% load static %} {% block content %}
 <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
 
-<div class="container container-fluid text-center m-0">
+<div class="container container-fluid text-center m-0 mx-auto">
 
   <section class="slide-wrapper text-center" id="section" style="padding:0px;">
     <div class="container" id="container1" style="margin-right:20px;">
@@ -27,7 +27,7 @@
                 <div class="card border-secondary w-33 h-auto"><a href="{% url 'project' project.id %}">
 
                     <img class="img W-100" src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt=""
-                      class="img-fluid" id="eachimage1" size="100px200"></a>
+                      class="img-fluid" id="eachimage13" size="100px200"></a>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
                   <div class="card-body">
@@ -56,7 +56,7 @@
                 <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
 
                     <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"
-                      id="eachimage1" size="100px200"></a>
+                      id="eachimage14" size="100px200"></a>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
                   <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
@@ -82,7 +82,7 @@
                 <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
 
                     <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"
-                      id="eachimage1" size="100px200"></a>
+                      id="eachimage15" size="100px200"></a>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
                   <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
@@ -166,17 +166,18 @@
         {% for neighbourhood in neighbourhoods %}
         <div class="card w-33">
             <div class="card-title">
-              <p style="font-size:20px;"> <a href="/neighbourhood/{{neighbourhood.id}}"><strong>Neighbourhood Name:</strong>
-                <br>
-                <strong> {{neighbourhood.neighbourhood_name}}</strong> </a></p>
+              <p style="font-size:30px;"><strong>Neighbourhood:</strong>
+
+                <strong><a href="/neighbourhood/{{neighbourhood.id}}">{{neighbourhood.neighbourhood_name}}</a></strong> </p>
             </div>
             <div class="card-body border-info w-33">
-
               <p>{{neighbourhood.neighbourhood_location}} </p>
               <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Resident Population:
-                <br>
+
                 {{ neighbourhood.population}}
               </p>
+              <button class="btn btn-lg btn-info" style="font-family:'Dosis', sans-serif; text-align:center;">JOIN THIS NEIGHBOURHOOD</button>
+
             </div>
         </div>
         {% endfor %}
