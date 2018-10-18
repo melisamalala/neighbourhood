@@ -13,6 +13,13 @@ def home_projects (request):
     # Display all projects here:
 
     if request.GET.get('search_term'):
+        businesses = Business.search_businesses(request.GET.get('search_term'))
+
+    else:
+        businesses = Business.objects.all()
+
+
+    if request.GET.get('search_term'):
         projects = Project.search_project(request.GET.get('search_term'))
 
     else:
@@ -32,7 +39,20 @@ def home_projects (request):
 
             HttpResponseRedirect('home_projects')
 
-    return render(request, 'index.html', {'projects':projects, 'letterForm':form})
+
+    return render(request, 'index.html', {'projects':projects, 'letterForm':form, 'businesses':businesses})
+
+
+
+def business(request, id):
+
+    try:
+        business = Business.objects.get(pk = id)
+
+    except DoesNotExist:
+        raise Http404()
+
+    return render(request, 'business.html', {"business": business})
 
 def project(request, id):
 
