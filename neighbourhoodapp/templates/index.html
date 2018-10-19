@@ -1,29 +1,26 @@
 {% extends 'base.html' %} {% load bootstrap4 %} {% load static %} {% block content %}
 <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
 
-
-
-
-
 <div class="container container-fluid text-center m-0 mx-auto">
 
   <section class="slide-wrapper text-center" id="section" style="padding:0px;">
     <div class="container" id="container1" style="margin-right:20px;">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators animated flash loop">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
+
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" style="">
           <div class="carousel-item active">
-            <div class="fill" style=" background-color:#48c3af;">
-              <h1 class="animate rotateOut loop" style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
+            <div class="fill" style=" background-color:#000000;">
+              <h1 class="animated bounceInLeft slow" style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
               <br>
-              <h1 style="font-family: 'Dosis', cursive; color:white;font-size:25px">News About Your Neighbourhood
+              <h1 class="animated bounceInRight slow "style="font-family: 'Dosis', cursive; color:white;font-size:25px">News About Your Neighbourhood
               </h1>
 
               <div class="card-columns">
@@ -86,7 +83,6 @@
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
 
-
                   <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a
                       href="{% url 'project' project.id %}">View News</a></span>
 
@@ -110,7 +106,6 @@
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
 
-
                   <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a
                       href="{% url 'project' project.id %}">View News</a></span>
 
@@ -129,9 +124,7 @@
 </div>
 
 
-
-
-<div class="jumbotron text-center mt-0 mb-0" style="background-color:white;font-family: 'Dosis', sans-serif;">
+<div class="jumbotron text-center mt-0 mb-0" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
   <h2 style="text-align:center;font-size:40px;color:blue;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
       <div class="card-deck d-flex">
         {% for neighbourhood in neighbourhoods %}
@@ -162,7 +155,7 @@
         {% endfor %}
 </div>
 </div>
-<div class="jumbotron text-center mt-0 mb-0" style="background-color:white;font-family: 'Dosis', sans-serif;">
+<div class="jumbotron text-center mt-0 mb-0" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
   <h2 style="text-align:center;font-size:40px;color:blue;"><strong>BUSINESS DIRECTORY</strong></h2>
       <div class="card-deck d-flex">
         {% for business in businesses %}
@@ -186,7 +179,7 @@
 
     </div>
 </div>
-  <div class="jumbotron text-center mt-1" style="background-color:white;font-family: 'Dosis', sans-serif;">
+  <div class="jumbotron text-center mt-1" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
 
     <form action="{%url 'homePage'%}" method="post" id="formletter">
       {%csrf_token%} {% bootstrap_form letterForm %}
