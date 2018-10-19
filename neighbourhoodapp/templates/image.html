@@ -5,7 +5,7 @@
 
   <div class="jumbotron text-center" style="background-color:white;">
 
-    <h1 class="h1" style="font-family: 'Dosis', cursive; color:blue;font-size:70px;">Awards</h1>
+    <h1 class="h1" style="font-family: 'Dosis', cursive; color:blue;font-size:40px;">Neighbourhood News</h1>
 
 
   </div>
@@ -13,7 +13,7 @@
 
 <div class="container">
   <div class="card mb-3" style="width:40rem;;">
-    <img class="card-img-top" src="{{project.project_image.url}}" alt="Card image cap" class="img-fluid" size="100px200">
+    <img class="card-img-top" src="{{project.project_image.url}}" alt="Card image cap" class="img-fluid" size="500px100">
     <div class="card-body">
 
 
@@ -45,15 +45,8 @@
 
         {% endfor %}
 
-        <h1 style="color:black;font-family: 'Dosis', sans-serif;">AVERAGE OF REVIEWS</h1>
 
 
-        <h5 style="font-family: 'Dosis',sans-serif;">{{ project.reviews.count }} reviews ({{ project.average_design | floatformat
-          }} average rating of design)</h5>
-        <h5 style="font-family: 'Dosis',sans-serif;">{{ project.reviews.count }} reviews ({{ project.average_content | floatformat
-          }} average rating of content)</h5>
-        <h5 style="font-family: 'Dosis',sans-serif;">{{ project.reviews.count }} reviews ({{ project.average_usability |
-          floatformat }} average rating of usability)</h5>
 
         <h3 style="font-family: 'Dosis', sans-serif;">Add your comment</h3>
         <hr>

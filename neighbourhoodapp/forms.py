@@ -18,7 +18,7 @@ class NewProjectForm(forms.ModelForm):
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = [ 'usability_rating', 'design_rating', 'content_rating' , 'comment']
+        fields = [ 'comment']
         widgets = {
             'comment': Textarea(attrs={'cols': 40, 'rows': 15}),
         }

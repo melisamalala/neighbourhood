@@ -87,17 +87,13 @@ def project(request, id):
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
-            design_rating = form.cleaned_data['design_rating']
-            content_rating = form.cleaned_data['content_rating']
-            usability_rating = form.cleaned_data['usability_rating']
+
             comment = form.cleaned_data['comment']
             review = Review()
             review.project = project
             review.user = current_user
             review.comment = comment
-            review.design_rating = design_rating
-            review.content_rating = content_rating
-            review.usability_rating = usability_rating
+
             review.save()
 
     else:
@@ -222,20 +218,6 @@ def individual_profile_page(request, username=None):
     images = Image.objects.filter(user_id=username)
 
     return render (request, 'registration/user_image_list.html', {'images':images, 'username': username})
-
-def search_projects(request):
-
-    # search for a user by their username
-    if 'project' in request.GET and request.GET["project"]:
-        search_term = request.GET.get("project")
-        searched_projects = Project.search_projects(search_term)
-        message = f"{search_term}"
-
-        return render(request, 'search.html', {"message": message, "projects": searched_projects})
-
-    else:
-        message = "You haven't searched for any person"
-        return render(request, 'search.html', {"message": message})
 
 
 def search_businesses(request):

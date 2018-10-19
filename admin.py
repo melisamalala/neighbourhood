@@ -7,7 +7,7 @@ from django.contrib import admin
 from django.contrib import admin
 
 # Register your models here.
-from .models import *
+from neighbourhoodapp.models import *
 
 
 class ImageAdmin(admin.ModelAdmin):
