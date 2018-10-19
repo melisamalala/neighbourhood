@@ -36,6 +36,10 @@ li a {
     min-width: 33%;
 }
 
+
+.w-32 {
+    max-width: 62%;
+}
 .img {
     max-height: 55%;
 }
@@ -118,4 +122,8 @@ height: 1500px! important;
 
 #container2{
 
+}
+
+#footer1 {
+color:white;
 }

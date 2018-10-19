@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eedae65e-d517-4fef-a7e2-7b57bc86fd1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/photos/chevron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +29,10 @@
           <entry key="css" value="4" />
           <entry key="env" value="2" />
           <entry key="gitignore" value="2" />
-          <entry key="html" value="39" />
-          <entry key="js" value="3" />
+          <entry key="html" value="40" />
+          <entry key="js" value="4" />
           <entry key="md" value="5" />
+          <entry key="png" value="1" />
           <entry key="py" value="35" />
           <entry key="txt" value="5" />
         </counts>
@@ -35,8 +40,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="39" />
-          <entry key="JavaScript" value="3" />
+          <entry key="HTML" value="40" />
+          <entry key="Image" value="1" />
+          <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Python" value="35" />
@@ -45,10 +51,10 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Procfile" value="16" />
-          <entry key="css" value="339" />
+          <entry key="css" value="401" />
           <entry key="env" value="13" />
           <entry key="gitignore" value="24" />
-          <entry key="html" value="2785" />
+          <entry key="html" value="2863" />
           <entry key="js" value="18" />
           <entry key="md" value="14" />
           <entry key="py" value="3037" />
@@ -56,8 +62,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="339" />
-          <entry key="HTML" value="2785" />
+          <entry key="CSS" value="401" />
+          <entry key="HTML" value="2863" />
           <entry key="JavaScript" value="18" />
           <entry key="Markdown" value="14" />
           <entry key="PLAIN_TEXT" value="53" />
@@ -105,12 +111,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-700">
-              <caret line="6" column="147" selection-start-line="6" selection-start-column="147" selection-end-line="6" selection-end-column="147" />
+            <state relative-caret-position="45">
+              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
               <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#form#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
@@ -126,33 +133,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/project_detail.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neighbourhoodapp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="27" column="93" selection-start-line="27" selection-start-column="93" selection-end-line="27" selection-end-column="93" />
+            <state relative-caret-position="144">
+              <caret line="128" column="41" lean-forward="true" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -218,21 +209,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="394">
+              <caret line="127" selection-start-line="127" selection-end-line="127" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neighbourhoodapp/models.py">
+        <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="240" column="20" selection-start-line="240" selection-start-column="4" selection-end-line="240" selection-end-column="20" />
+            <state relative-caret-position="285">
+              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="57" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <marker date="1539941648479" expanded="true" signature="3873:3878" ph="..." />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#11;n#ul#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/photos/chevron.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -259,6 +281,7 @@
       <find>view pro</find>
       <find>visit</find>
       <find>like</find>
+      <find>sign</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -284,7 +307,6 @@
         <option value="$PROJECT_DIR$/theneighbourhoodproject/urls.py" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/neighbourhoodapp/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/tests.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/registration/registration_form.html" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/search.html" />
@@ -303,15 +325,16 @@
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/neighbourhood.html" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/views.py" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/base.html" />
-        <option value="$PROJECT_DIR$/static/css/styles.css" />
-        <option value="$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html" />
         <option value="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/neighbourhoodapp/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="176" />
-    <option name="y" value="64" />
+    <option name="x" value="143" />
+    <option name="y" value="78" />
     <option name="width" value="1018" />
     <option name="height" value="634" />
   </component>
@@ -343,6 +366,13 @@
             <path>
               <item name="neighbourhood" type="b2602c69:ProjectViewProjectNode" />
               <item name="neighbourhood" type="462c0819:PsiDirectoryNode" />
+              <item name="neighbourhoodapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="neighbourhood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="neighbourhood" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -356,6 +386,12 @@
               <item name="neighbourhood" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="neighbourhood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="neighbourhood" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="photos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,10 +409,10 @@
       <recent name="$PROJECT_DIR$/neighbourhoodapp/templates/registration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/photos" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/neighbourhoodapp" />
       <recent name="$PROJECT_DIR$/neighbourhoodapp/templates" />
-      <recent name="$PROJECT_DIR$/static/photos" />
       <recent name="$PROJECT_DIR$/static/css" />
     </key>
   </component>
@@ -415,15 +451,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="176" y="64" width="1018" height="634" extended-state="0" />
-    <editor active="true" />
+    <frame x="143" y="78" width="1018" height="634" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20762287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.2896679" />
+      <window_info anchor="bottom" id="Terminal" weight="0.21033211" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
@@ -438,9 +473,9 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17452358" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20762287" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.12915128" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.21033211" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Python Console" order="3" />
@@ -569,17 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="58" column="93" selection-start-line="58" selection-start-column="93" selection-end-line="58" selection-end-column="93" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="994">
@@ -621,13 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-193">
           <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -762,6 +779,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="216" column="57" selection-start-line="216" selection-start-column="57" selection-end-line="216" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1539950764761" expanded="true" signature="10272:10273" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/photos/chevron.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/face_recognition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/neighbourhood.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -783,69 +838,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="216" column="57" selection-start-line="216" selection-start-column="57" selection-end-line="216" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1539950764761" expanded="true" signature="10272:10273" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/face_recognition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-700">
-          <caret line="6" column="147" selection-start-line="6" selection-start-column="147" selection-end-line="6" selection-end-column="147" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#form#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#4;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#5;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#6;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="27" column="93" selection-start-line="27" selection-start-column="93" selection-end-line="27" selection-end-column="93" />
+        <state relative-caret-position="144">
+          <caret line="128" column="41" lean-forward="true" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -882,6 +885,60 @@
             <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#11;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="127" selection-start-line="127" selection-end-line="127" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#11;n#ul#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#form#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#6;n#div#2;n#div#0;n#nav#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

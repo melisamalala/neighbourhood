@@ -1,5 +1,5 @@
 {%extends "registration/base.html"%} {% load bootstrap4 %} {% load static %} {% block content %}
-<div class="container" style="background-color:#fff;">
+<div class="container" style="background-color:#black;">
   <div class="row p-0 m-0">
     <div class="col-md-6 mt-5">
       {% if form.errors %}
@@ -11,18 +11,19 @@
 
     </div>
 
-    <div class="col-md-6  mt-5">
+    <div class="col-md-6  mt-5" style="background-color:black;">
       {% if form.errors %}
       <p> Some Information Might be Incorrect </p>
       {% endif %}
       <div class="card border-primary mb-4" style="max-width:25rem;">
 
-        <div class="card-header text-center">
-          <h1 class="h1" style="font-family: 'Dosis', sans-serif; color:blue;font-size:40px;">NEIGHBOURHOOD</h1>
-          <h3 class="text-center" style="color:grey;font-size:15px;font-family: 'Dosis', sans-serif;">Login to see photos and videos from your friends.</h3>
+        <div class="card-header text-center border-bottom" style="background-color:black;">
+          <h1 class="h1" style="font-family: 'Dosis', sans-serif; color:white;font-size:40px;">NEIGHBOURHOOD</h1>
+          <h3 class="text-center" style="color:white;font-size:15px;font-family: 'Dosis', sans-serif;">Login to see photos and videos from your friends.</h3>
         </div>
-        <div class="card-body text-primary">
-          <form action="/accounts/login/" method="post" style="font-family: 'Dosis', sans-serif; " >
+
+        <div class="card-body text-primary"style=" background-color:black;">
+          <form action="/accounts/login/" method="post" style="font-family: 'Dosis', sans-serif;color:white; background-color:black;" >
             {% csrf_token %} {% bootstrap_form form%}
 
             <div class="form-group">
@@ -40,23 +41,23 @@
   <!-- ********************* -->
 
   <div class="row p-0 m-0">
-    <div class="col-md-6">
-      <div class="card mt-5" style="width: 28rem;">
+    <div class="col-md-6" style="background-color:black;">
+      <div class="card mt-5" style="width: 28rem;background-color:black;">
         <div class="card-body text-center">
-          <h5 class="card-title" style="font-family: 'Dosis', sans-serif;">Don't have an account?</h5>
-          <h2 style="color:grey;font-size:10px;font-family: 'Dosis', sans-serif;">By signing up, you agree to our Terms, Data Policy and Cookies Policy.</h2>
-          <a href="/accounts/register" class="btn btn-primary" style="font-family: 'Dosis', sans-serif;">Sign Up</a>
+          <h5 class="card-title" style="font-family: 'Dosis', sans-serif;color:white;">Don't have an account?</h5>
+          <h2 style="color:white;font-size:10px;font-family: 'Dosis', sans-serif;">By signing up, you agree to our Terms, Data Policy and Cookies Policy.</h2>
+          <a href="/accounts/register" class="btn btn-primary" style="font-family: 'Dosis', sans-serif;color:white;">Sign Up</a>
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="card mt-5" style="width: 28rem;">
+      <div class="card mt-5" style="width: 28rem; background-color:black;">
         <div class="card-body text-center">
-          <h5 class="card-title" style="font-family: 'Dosis', sans-serif;" >Get the app.</h5>
+          <h5 class="card-title" style="font-family: 'Dosis', sans-serif;color:white;" >Get the app.</h5>
           <a href="https://itunes.apple.com/ke/app/instagram/id389801252?mt=8">
-            <img src="{% static 'photos/house1.jpg' %}"
+            <img src="{% static 'photos/appstore.png' %}"
               style="height:90px;width:200px;"></a>
-          <a href="https://play.google.com/store?hl=en"><img src="{% static 'photos/house.jpeg' %}" style="height:90px;width:200px;"></a>
+          <a href="https://play.google.com/store?hl=en"><img src="{% static 'photos/playstore.png' %}" style="height:90px;width:200px;"></a>
         </div>
       </div>
     </div>
