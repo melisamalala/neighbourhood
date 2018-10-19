@@ -155,7 +155,7 @@
               </p>
               <button class="btn btn-lg btn-info"
                       style="font-family:'Dosis', sans-serif; text-align:center;">
-                {% if user.profile.neighbourhood_id %}
+                {% if user.profile.neighbourhood_id == None %}
                 <a href="{% url 'join' neighbourhood.id %}" class="btn btn-sm btn-info">
               JOIN THIS NEIGHBOURHOOD</a> </button>
               {% endif %}

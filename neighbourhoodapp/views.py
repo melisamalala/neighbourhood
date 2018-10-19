@@ -210,21 +210,21 @@ def join(request, id):
 
 @login_required(login_url='/accounts/login/')
 def exit(request, id):
-	'''
-	This function will delete a neighbourhood instance in the join table
-	'''
-	if Join.objects.filter(user_id = request.user).exists():
-		Join.objects.get(user_id = request.user).delete()
-        request.user.profile.neighbourhood_id.delete()
 
-         return redirect(reverse('homePage', args=(neighbourhood.id,)))
+    neighbourhood = Neighbourhood.objects.get(pk=id)
+    if Join.objects.filter(user_id=request.user).exists():
+
+        Join.objects.filter(user_id=request.user).delete()
+
+        return redirect(reverse('neighbourhood', args=(neighbourhood.id,)))
 
     else:
 
-        Join(user_id=request.user, neighbourhood_id=neighbourhood).save()
+        Join(user_id=request.user, neighbourhood_id=neighbourhood).delete()
 
-        print("success")
+    print("success")
     return redirect('homePage')
+
 
 
 

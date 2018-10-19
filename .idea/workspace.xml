@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eedae65e-d517-4fef-a7e2-7b57bc86fd1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/templates/neighbourhood.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/templates/neighbourhood.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbourhoodapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +50,7 @@
           <entry key="html" value="2550" />
           <entry key="js" value="18" />
           <entry key="md" value="14" />
-          <entry key="py" value="2964" />
+          <entry key="py" value="3037" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -64,7 +60,7 @@
           <entry key="JavaScript" value="18" />
           <entry key="Markdown" value="14" />
           <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Python" value="2964" />
+          <entry key="Python" value="3037" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -75,11 +71,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neighbourhoodapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="220" column="7" lean-forward="true" selection-start-line="220" selection-start-column="7" selection-end-line="220" selection-end-column="7" />
+            <state relative-caret-position="125">
+              <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1539943675369" expanded="true" signature="10228:10229" ph="..." />
+                <marker date="1539950661853" expanded="true" signature="10302:10303" ph="..." />
               </folding>
             </state>
           </provider>
@@ -411,13 +407,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="185" y="65" width="1018" height="568" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17452358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17452358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.14705883" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.15756303" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
@@ -775,17 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="240" column="20" selection-start-line="240" selection-start-column="4" selection-end-line="240" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1539941648479" expanded="true" signature="3873:3878" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbourhoodapp/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -844,13 +830,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/views.py">
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="220" column="7" lean-forward="true" selection-start-line="220" selection-start-column="7" selection-end-line="220" selection-end-column="7" />
+        <state relative-caret-position="163">
+          <caret line="240" column="20" selection-start-line="240" selection-start-column="4" selection-end-line="240" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1539943675369" expanded="true" signature="10228:10229" ph="..." />
+            <marker date="1539941648479" expanded="true" signature="3873:3878" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbourhoodapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1539950661853" expanded="true" signature="10302:10303" ph="..." />
           </folding>
         </state>
       </provider>
