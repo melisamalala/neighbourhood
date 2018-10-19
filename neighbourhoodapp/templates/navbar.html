@@ -4,7 +4,7 @@
 <nav class="navbar navbar-dark mb-0 mt-0 " id="nav">
   <div class="container-fluid">
     <div class="navbar-header">
-        <a class="navbar-brand" href="{% url 'homePage' %}"><img src="https://png.icons8.com/doodle/50/000000/home.png" style="height:20px;width:20px;">
+        <a class="navbar-brand" href="{% url 'homePage' %}"><img src="https://png.icons8.com/doodle/50/000000/home.png" style="height:15px;width:15px;">
       </a>
       <a class="navbar-brand" id="victor" href="{% url 'homePage' %}">NEIGHBOURHOOD
       </a>
@@ -20,7 +20,7 @@
           <input type="text" style="font-family: 'Dosis', sans-serif;font-size:10px;"
                  class="form-control mr-sm-4 w-auto" placeholder="Search Business" name="business">
           <div class="input-group-btn">
-            <button class="btn btn-outline-primary my-1 my-sm-0"
+            <button class="btn btn-outline-light my-1 my-sm-0"
                     style="font-family: 'Dosis', sans-serif;font-size:10px;" type="submit">Find</button>
           </div>
         </div>
@@ -28,30 +28,30 @@
       </form>
 
 
-      <li style="font-family: 'Dosis', sans-serif;font-size:12px;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:13px;">
         <a href="{% url 'individual_profile_page' user.id %}">Profile</a>
       </li>
-                   <li style="font-family: 'Dosis', sans-serif; font-size:12px;">
+                   <li style="font-family: 'Dosis', sans-serif; font-size:13px;">
                     <a href="{%url 'new_project'%}">Post News</a>
                   </li>
-      <li style="font-family: 'Dosis', sans-serif;font-size:12px;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:13px;">
                     <a href="{%url 'new_neighbourhood'%}">Create Neighbourhood</a>
                   </li>
 
-      <li style="font-family: 'Dosis', sans-serif;font-size:12px;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:13px;">
                     <a href="{%url 'new_business'%}">Create Business</a>
                   </li>
 
-      <li style="font-family: 'Dosis', sans-serif;font-size:12px;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:13px;">
         <a href="/logout">Logout</a>
       </li>
 
       {% else %}
-      <li style="font-family: 'Dosis', sans-serif;font-size:12px;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:13px;">
         <a class='btn btn-default' href="/accounts/login">Login</a>
       </li>
 
-      <li style="font-family: 'Dosis', sans-serif;font-size:12px;">
+      <li style="font-family: 'Dosis', sans-serif;font-size:13px;">
         <a class='btn btn-default' href="/accounts/register">Register</a>
       </li>
 

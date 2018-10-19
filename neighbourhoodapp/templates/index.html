@@ -18,19 +18,19 @@
         <div class="carousel-inner" style="">
           <div class="carousel-item active">
             <div class="fill" style=" background-color:#000000;">
-              <h1 class="animated bounceInLeft slow" style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
+              <h1 class="animated bounceInLeft loop" style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
               <br>
-              <h1 class="animated bounceInRight slow "style="font-family: 'Dosis', cursive; color:white;font-size:25px">News About Your Neighbourhood
+              <h1 class="animated bounceInRight loop "style="font-family: 'Dosis', cursive; color:white;font-size:25px">News About Your Neighbourhood
               </h1>
 
               <div class="card-columns">
                 {% for project in projects %}
-                <div class="card border-secondary w-33 h-auto" style=" background-color:#48c3af;"><a href="{% url 'project' project.id %}">
+                <div class="card border-secondary w-33 h-auto" style=" background-color:black;"><a href="{% url 'project' project.id %}">
 
                     <img class="img W-100" src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt=""
                       class="img-fluid" id="eachimage13" size="100px200"></a>
-                  <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
-                  <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Posted by: {{ project.user.username}}</p>
+                  <p style="font-family: 'Dosis', sans-serif; text-align:center;color:white;"> {{ project.description}}</p>
+                  <p style="font-family: 'Dosis', sans-serif; text-align:center;color:white;"> Posted by: {{ project.user.username}}</p>
                   <div class="card-body">
 
 
@@ -93,9 +93,9 @@
           </div>
           <div class="carousel-item">
             <div class="fill" style=" background-color:#e47794;">
-              <h1 style="font-family: 'Dosis', cursive; color:white;font-size:70px;">The Neighbourhood</h1>
+              <h1 style="font-family: 'Dosis', cursive; color:white;font-size:50px;">The Neighbourhood</h1>
               <br>
-              <h1 style="font-family: 'Dosis', cursive; color:white;font-size:25px">Get Updates About Your Neighbourhood
+              <h1 style="font-family: 'Dosis', cursive; color:white;font-size:20px">Get Updates About Your Neighbourhood
               </h1>
               <div class="card-columns">
                 {% for project in projects %}
@@ -125,7 +125,7 @@
 
 
 <div class="jumbotron text-center mt-0 mb-0" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
-  <h2 style="text-align:center;font-size:40px;color:blue;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
+  <h2 style="text-align:center;font-size:40px;color:#ffffff;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
       <div class="card-deck d-flex">
         {% for neighbourhood in neighbourhoods %}
         <div class="card w-33">
@@ -156,7 +156,7 @@
 </div>
 </div>
 <div class="jumbotron text-center mt-0 mb-0" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
-  <h2 style="text-align:center;font-size:40px;color:blue;"><strong>BUSINESS DIRECTORY</strong></h2>
+  <h2 style="text-align:center;font-size:40px;color:#ffffff;"><strong>BUSINESS DIRECTORY</strong></h2>
       <div class="card-deck d-flex">
         {% for business in businesses %}
         <div class="card w-33">
@@ -181,7 +181,7 @@
 </div>
   <div class="jumbotron text-center mt-1" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
 
-    <form action="{%url 'homePage'%}" method="post" id="formletter">
+    <form action="{%url 'homePage'%}" method="post" id="formletter" style="color:#ffffff;">
       {%csrf_token%} {% bootstrap_form letterForm %}
       <input type="submit" style="background-color:white;" value="Subscribe To Neighbourhood ">
     </form>
@@ -189,7 +189,7 @@
     <div class="container" id="">
       <div class="col-md-12">
         <div class="footer text-center">
-          <ul id="footer1">
+          <ul id="footer1" style="color:#ffffff;">
             <li>ABOUT US</li>
             <li>SUPPORT</li>
             <li>PRESS</li>
