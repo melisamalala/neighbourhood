@@ -8,12 +8,10 @@ class NewImageForm(forms.ModelForm):
         model = Image
         exclude = ['user',]
 
-
 class NewProjectForm(forms.ModelForm):
     class Meta:
         model = Project
         exclude = ['user',]
-
 
 class ReviewForm(forms.ModelForm):
     class Meta:
