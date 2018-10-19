@@ -3,6 +3,8 @@ import numpy as np
 from django.db.models.signals import post_save
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.sql.datastructures import Join
+
 
 class tags(models.Model):
     name = models.CharField(max_length=30)
@@ -303,7 +305,7 @@ class Join(models.Model):
 	'''
 	Model that keeps track of what user has joined what neighbourhood
 	'''
-	user_id = models.OneToOneField(User, on_delete=models.CASCADE,related_name="neighbourhooduser",null=True,blank=True)
+	user_id = models.ForeignKey(User, on_delete=models.CASCADE,related_name="neighbourhooduser",null=True,blank=True)
 	neighbourhood_id = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE,related_name="neighbourhoodjoin",null=True,blank=True)
 
 	def __str__(self):

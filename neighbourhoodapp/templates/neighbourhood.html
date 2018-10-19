@@ -21,11 +21,42 @@
          <p class="card-text" style="font-family: 'Dosis', sans-serif;"><strong>Residents Population:</strong>
         <br> {{neighbourhood.population}}
       </p>
-    </div>
 
+      <button class="btn btn-lg btn-danger"
+                      style="font-family:'Dosis', sans-serif; text-align:center;">
+                <a href="{% url 'homePage' %}" class="btn btn-sm btn-danger">
+              EXIT THIS NEIGHBOURHOOD</a> </button>
+    </div>
 
     </div>
   </div>
+
+
+<div class="jumbotron text-center mt-0 mb-0" style="background-color:white;font-family: 'Dosis', sans-serif;">
+  <h2 style="text-align:center;font-size:40px;color:blue;"><strong>BUSINESS DIRECTORY</strong></h2>
+      <div class="card-deck d-flex">
+         {% for business in neighbourhood.neighbourhoodbusiness.all %}
+        <div class="card w-33">
+            <div class="card-title">
+              <p style="font-size:20px;"> <a href="{% url 'business' business.id %}"><strong>Business Name:</strong>
+
+                <strong> {{business.business_name}}</strong> </a></p>
+            </div>
+            <div class="card-body border-info w-33">
+
+              <p>{{business.neighbourhood_id}} </p>
+              <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Contact Information:
+                <br>
+                {{ business.business_email_address}}
+              </p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+
 
 <div class="container">
   <div class="col-md-12">

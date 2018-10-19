@@ -5,7 +5,9 @@ from django.http  import HttpResponse, Http404, HttpResponseRedirect, JsonRespon
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .forms import *
+from django.contrib import messages
 from .email import send_welcome_email
+from django.urls import reverse
 
 
 @login_required(login_url='/accounts/login/')
@@ -61,15 +63,17 @@ def business(request, id):
 
     return render(request, 'business.html', {"business": business})
 
+
 def neighbourhood(request, id):
 
     try:
         neighbourhood = Neighbourhood.objects.get(pk = id)
+        business = Business.objects.filter(neighbourhood_id=neighbourhood)
 
     except DoesNotExist:
         raise Http404()
 
-    return render(request, 'neighbourhood.html', {"neighbourhood": neighbourhood})
+    return render(request, 'neighbourhood.html', {"neighbourhood": neighbourhood, 'business':business})
 
 
 def project(request, id):
@@ -184,7 +188,38 @@ def new_neighbourhood(request):
     return render(request, 'registration/new_neighbourhood.html', {"form": form})
 
 
+@login_required(login_url='/accounts/login/')
+def join(request, id):
+    '''
+    This view function will implement adding
+    '''
+    neighbourhood = Neighbourhood.objects.get(pk=id)
+    if Join.objects.filter(user_id=request.user).exists():
 
+        Join.objects.filter(user_id=request.user).update(neighbourhood_id=neighbourhood)
+
+        return redirect(reverse('neighbourhood', args=(neighbourhood.id,)))
+
+    else:
+
+        Join(user_id=request.user, neighbourhood_id=neighbourhood).save()
+
+    print("success")
+    return redirect('homePage')
+
+
+@login_required(login_url='/accounts/login/')
+def exit(request, id):
+	'''
+	This function will delete a neighbourhood instance in the join table
+	'''
+	if Join.objects.filter(user_id = request.user).exists():
+		Join.objects.get(user_id = request.user).delete()
+        request.user.profile.neighbourhood_id.delete()
+
+
+         return redirect(reverse('homePage', args=(neighbourhood.id,)))
+		# return redirect('homePage')
 # Viewing a single picture
 
 def user_list(request):
@@ -235,7 +270,6 @@ def search_businesses(request):
         return render(request, 'search.html', {"message": message})
 
 
-
 @login_required(login_url='/accounts/login/')
 def individual_profile_page(request, username):
     print(username)
@@ -273,7 +307,6 @@ def project_list(request):
     context = {'project_list':project_list}
     return render(request, 'project_list.html', context)
 
-
 # AJAX functionality
 
 def newsletter(request):
@@ -286,20 +319,3 @@ def newsletter(request):
     data= {'success': 'You have been successfully added to the newsletter mailing list'}
     return JsonResponse(data)
 
-@login_required(login_url='/accounts/login/')
-def join_neighbourhood(request, id):
-    '''
-    This view function will implement adding
-    '''
-
-    neighbourhood = Neighbourhood.objects.get(pk=id)
-    if Join.objects.filter(user_id=request.user).exists():
-
-
-        Join.objects.filter(user_id=request.user).update(neighbourhood_id=neighbourhood)
-    else:
-
-        Join(user_id=request.user, neighbourhood_id=neighbourhood).save()
-
-
-    return render(request, 'neighbourhoods.html', )
