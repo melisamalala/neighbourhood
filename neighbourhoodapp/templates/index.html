@@ -28,17 +28,15 @@
 
               <div class="card-columns">
                 {% for project in projects %}
-                <div class="card border-secondary w-33 h-auto"><a href="{% url 'project' project.id %}">
+                <div class="card border-secondary w-33 h-auto" style=" background-color:#48c3af;"><a href="{% url 'project' project.id %}">
 
                     <img class="img W-100" src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt=""
                       class="img-fluid" id="eachimage13" size="100px200"></a>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
-                  <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
+                  <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Posted by: {{ project.user.username}}</p>
                   <div class="card-body">
-                    <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>
-                    <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
 
-                      <a href="{{ project.project_url}}">Visit Site</a></span>
+
                     <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a
                         href="{% url 'project' project.id %}">View News</a></span>
                   </div>
@@ -63,9 +61,7 @@
                       id="eachimage14" size="100px200"></a>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
-                  <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
-                    <a href="{{ project.project_url}}">Visit Site</a></span>
-                  <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>
+
                   <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a
                       href="{% url 'project' project.id %}">View News</a></span>
 
@@ -83,15 +79,14 @@
               </h1>
               <div class="card-columns">
                 {% for project in projects %}
-                <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
+                <div class="card border-secondary w-33" style=" background-color:##7fc2f4;"><a href="{% url 'project' project.id %}">
 
                     <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"
                       id="eachimage15" size="100px200"></a>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
-                  <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
-                    <a href="{{ project.project_url}}">Visit Site</a></span>
-                  <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>
+
+
                   <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a
                       href="{% url 'project' project.id %}">View News</a></span>
 
@@ -108,15 +103,14 @@
               </h1>
               <div class="card-columns">
                 {% for project in projects %}
-                <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
+                <div class="card border-secondary w-33" style=" background-color:#e47794;"><a href="{% url 'project' project.id %}">
 
                     <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"
                       id="eachimage1" size="100px200"></a>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
                   <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
-                  <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
-                    <a href="{{ project.project_url}}">Visit Site</a></span>
-                  <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>
+
+
                   <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a
                       href="{% url 'project' project.id %}">View News</a></span>
 
@@ -147,6 +141,7 @@
 
                 <strong><a href="/neighbourhood/{{neighbourhood.id}}">{{neighbourhood.neighbourhood_name}}</a></strong> </p>
             </div>
+          <hr>
             <div class="card-body border-info w-33">
               <p>{{neighbourhood.neighbourhood_location}} </p>
               <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Resident Population:
@@ -177,6 +172,7 @@
 
                 <strong> {{business.business_name}}</strong> </a></p>
             </div>
+          <hr>
             <div class="card-body border-info w-33">
 
               <p>{{business.neighbourhood_id}} </p>
