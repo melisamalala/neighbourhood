@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eedae65e-d517-4fef-a7e2-7b57bc86fd1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/face_recognition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/templates/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/templates/image.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbourhoodapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbourhoodapp/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="eedae65e-d517-4fef-a7e2-7b57bc86fd1b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +188,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/face_recognition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
+            <state relative-caret-position="-128">
               <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -298,8 +289,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="195" />
-    <option name="y" value="76" />
+    <option name="x" value="183" />
+    <option name="y" value="108" />
     <option name="width" value="1018" />
     <option name="height" value="558" />
   </component>
@@ -385,10 +376,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="195" y="76" width="1018" height="558" extended-state="0" />
+    <frame x="183" y="108" width="1018" height="558" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19759278" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3009027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -826,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/face_recognition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
+        <state relative-caret-position="-128">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
