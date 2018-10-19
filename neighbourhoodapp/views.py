@@ -217,16 +217,23 @@ def exit(request, id):
 		Join.objects.get(user_id = request.user).delete()
         request.user.profile.neighbourhood_id.delete()
 
-
          return redirect(reverse('homePage', args=(neighbourhood.id,)))
-		# return redirect('homePage')
+
+    else:
+
+        Join(user_id=request.user, neighbourhood_id=neighbourhood).save()
+
+        print("success")
+    return redirect('homePage')
+
+
+
 # Viewing a single picture
 
 def user_list(request):
     user_list = User.objects.all()
     context = {'user_list': user_list}
     return render(request, 'user_list.html', context)
-
 
 @login_required(login_url='/accounts/login/')
 def edit_profile(request):
