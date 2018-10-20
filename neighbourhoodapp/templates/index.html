@@ -12,7 +12,6 @@
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
-
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" style="">
@@ -111,10 +110,7 @@
 
                 </div>
                 {% endfor %}
-
-
               </div>
-
             </div>
           </div>
         </div>
@@ -123,21 +119,19 @@
   </section>
 </div>
 
-
 <div class="jumbotron text-center mt-0 mb-0" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
   <h2 style="text-align:center;font-size:40px;color:#ffffff;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
-      <div class="card-deck d-flex w-32">
+      <div class="card-deck d-flex w-32 border border-primary" style="background-color:#000000">
         {% for neighbourhood in neighbourhoods %}
-        <div class="card w-33">
+        <div class="card w-33 border border-primary" style="background-color:#000000">
             <div class="card-title">
-              <p style="font-size:30px;"><strong>Neighbourhood:</strong>
-
+              <p style="font-size:30px;color:white;"><strong>Neighbourhood:</strong>
                 <strong><a href="/neighbourhood/{{neighbourhood.id}}">{{neighbourhood.neighbourhood_name}}</a></strong> </p>
             </div>
           <hr>
-            <div class="card-body border-info w-33">
-              <p>{{neighbourhood.neighbourhood_location}} </p>
-              <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Resident Population:
+            <div class="card-body border-info w-33" style="background-color:black;">
+              <p style="color:white;">{{neighbourhood.neighbourhood_location}} </p>
+              <p style="font-family: 'Dosis', sans-serif; text-align:center;color:white"> Resident Population:
 
                 {{ neighbourhood.population}}
               </p>
@@ -147,10 +141,7 @@
                 <a href="{% url 'join' neighbourhood.id %}" class="btn btn-sm btn-info">
               JOIN THIS NEIGHBOURHOOD</a> </button>
               {% endif %}
-
         </div>
-
-
     </div>
         {% endfor %}
 </div>
@@ -176,7 +167,6 @@
             </div>
         </div>
         {% endfor %}
-
     </div>
 </div>
   <div class="jumbotron text-center mt-1" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
