@@ -2,29 +2,29 @@
 <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
 
 <div class="container">
-  <div class="jumbotron text-center" style="background-color:white;">
-    <h1 class="h1" style="font-family: 'Dosis', cursive; color:blue;font-size:70px;">Neighbourhood</h1>
+  <div class="jumbotron text-center" style="background-color:black;">
+    <h1 class="h1" style="font-family: 'Dosis', cursive; color:white;font-size:70px;">Neighbourhood</h1>
 
   </div>
 </div>
 
-<div class="container">
-  <div class="card mb-3" style="width:40rem;;">
-    <div class="card-body">
+<div class="container" style="background-color:black;">
+  <div class="card mb-3 border border-info" style="width:40rem;background-color:black;">
+    <div class="card-body ">
 
-      <h5 class="card-title" style="font-family: 'Dosis', sans-serif;"><strong>Neighbourhood Name:</strong>
+      <h5 class="card-title border-bottom" style="font-family: 'Dosis', sans-serif;color:white;"><strong>Neighbourhood Name:</strong>
         <br> {{neighbourhood.neighbourhood_name}}
       </h5>
-      <p class="card-text" style="font-family: 'Dosis', sans-serif;"><strong>Contact:</strong>
+      <p class="card-text" style="font-family: 'Dosis', sans-serif;color:white;"><strong>Contact:</strong>
         <br> {{neighbourhood.neighbourhood_location}}
       </p>
-         <p class="card-text" style="font-family: 'Dosis', sans-serif;"><strong>Residents Population:</strong>
+         <p class="card-text" style="font-family: 'Dosis', sans-serif;color:white;"><strong>Residents Population:</strong>
         <br> {{neighbourhood.population}}
       </p>
 
       <button class="btn btn-lg btn-danger"
                       style="font-family:'Dosis', sans-serif; text-align:center;">
-                <a href="{% url 'exit' neighbourhood.id %}" class="btn btn-sm btn-danger">
+                <a href="{% url 'exit' neighbourhood.id %}" class="btn btn-sm btn-danger animated pulse loop">
               EXIT THIS NEIGHBOURHOOD</a> </button>
     </div>
 
@@ -32,20 +32,20 @@
   </div>
 
 
-<div class="jumbotron text-center mt-0 mb-0" style="background-color:white;font-family: 'Dosis', sans-serif;">
-  <h2 style="text-align:center;font-size:40px;color:blue;"><strong>BUSINESS DIRECTORY</strong></h2>
-      <div class="card-deck d-flex">
+<div class="jumbotron text-center mt-0 mb-0" style="background-color:black;font-family: 'Dosis', sans-serif;">
+  <h2 style="text-align:center;font-size:30px;color:WHITE;"><strong>BUSINESSES IN THIS NEIGHBOURHOOD</strong></h2>
+      <div class="card-deck d-flex" style="background-color:black;">
          {% for business in neighbourhood.neighbourhoodbusiness.all %}
-        <div class="card w-33">
-            <div class="card-title">
-              <p style="font-size:20px;"> <a href="{% url 'business' business.id %}"><strong>Business Name:</strong>
+        <div class="card w-33 border border-info" style="background-color:black;">
+            <div class="card-title border-bottom">
+              <p style="font-size:20px;colour:white"> <a href="{% url 'business' business.id %}"><strong>Business Name:</strong>
 
                 <strong> {{business.business_name}}</strong> </a></p>
             </div>
             <div class="card-body border-info w-33">
 
-              <p>{{business.neighbourhood_id}} </p>
-              <p style="font-family: 'Dosis', sans-serif; text-align:center;"> Contact Information:
+              <p style="color:white;">{{business.neighbourhood_id}} </p>
+              <p style="font-family: 'Dosis', sans-serif; text-align:center;color:white;"> Contact Information:
                 <br>
                 {{ business.business_email_address}}
               </p>

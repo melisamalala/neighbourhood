@@ -1,4 +1,7 @@
-{%extends "registration/base.html"%} {% load bootstrap4 %} {%load static%} {% load staticfiles %} {% block content %}
+{%extends "registration/base.html"%}
+{% load bootstrap4 %}
+{%load static%}
+{% block content %}
 
 
 <head>
@@ -9,12 +12,12 @@
   {{form.media}}
 
 {% block styles %} {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/news.css' %}"> {% endblock %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}"> {% endblock %}
 
 </head>
 
 <body>
-<div class="container" style="background-color:#fff;">
+<div class="container" style="background-color:black; color:white;font-family: 'Dosis', sans-serif;">
 
      <div class="row">
 
@@ -34,9 +37,6 @@
 
      </div>
 </div>
-
-
-
 
 </body>
 {% endblock %}

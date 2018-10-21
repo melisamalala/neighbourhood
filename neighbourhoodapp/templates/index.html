@@ -34,7 +34,7 @@
                   <div class="card-body">
 
 
-                    <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a
+                    <span class="badge badge-pill badge-warning animated pulse loop" style="font-family: 'Dosis', sans-serif; text-align:center;"><a
                         href="{% url 'project' project.id %}">View News</a></span>
                   </div>
 
@@ -125,7 +125,7 @@
 
 
 <div class="jumbotron text-center mt-0 mb-0" style="background-color:#000000;font-family: 'Dosis', sans-serif;">
-  <h2 style="text-align:center;font-size:40px;color:#ffffff;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
+  <h2 class="animated zoomInLeft" style="text-align:center;font-size:40px;color:#ffffff;"><strong>NEIGHBOURHOOD DIRECTORY</strong></h2>
       <div class="card-deck d-flex w-32 " style="background-color:#000000">
         {% for neighbourhood in neighbourhoods %}
         <div class="card w-33 border border-info" style="background-color:#000000">
@@ -141,10 +141,10 @@
 
                 {{ neighbourhood.population}}
               </p>
-              <button class="btn btn-lg btn-info"
+              <button id="button" class="btn btn-lg btn-info animated pulse loop"
                       style="font-family:'Dosis', sans-serif; text-align:center;">
                 {% if user.profile.neighbourhood_id == None %}
-                <a href="{% url 'join' neighbourhood.id %}" class="btn btn-sm btn-info">
+                <a href="{% url 'join' neighbourhood.id %}">
               JOIN THIS NEIGHBOURHOOD</a> </button>
               {% endif %}
 
@@ -156,7 +156,7 @@
 </div>
 </div>
 <div class="jumbotron text-center mt-0 mb-0" style="background-color:black;font-family: 'Dosis', sans-serif;">
-  <h2 style="text-align:center;font-size:40px;color:#ffffff;"><strong>BUSINESS DIRECTORY</strong></h2>
+  <h2 class="animated zoomInLeft" style="text-align:center;font-size:40px;color:#ffffff;"><strong>BUSINESS DIRECTORY</strong></h2>
       <div class="card-deck d-flex">
         {% for business in businesses %}
         <div class="card w-33 border border-info" style="background-color:black;">
