@@ -21,6 +21,11 @@ li a {
   color:white;
 }
 
+p a {
+  color:white;
+}
+
+
 #footer1 li {
   padding: 10px;
   font-size: 10px;
@@ -38,7 +43,7 @@ li a {
 
 
 .w-32 {
-    max-width: 62%;
+    max-width: 85%;
 }
 .img {
     max-height: 55%;
