@@ -225,9 +225,6 @@ def exit(request, id):
     print("success")
     return redirect('homePage')
 
-
-
-
 # Viewing a single picture
 
 def user_list(request):

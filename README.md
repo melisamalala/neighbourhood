@@ -21,7 +21,7 @@ The following are needed for the application to run on a local computer:
 * python version 3.6
 * Django framework
 * Bootstrap v.3
-* Text editor (atom, VS code or sublime text)
+* Text editor (Pycharm,Atom, VS code or Sublime )
 * Web browser
 A crucial point to note: You will need Python version 3 and above installed on your laptop.
 If you don't have it installed got to [Python.org](https://www.python.org/downloads/) to install.
@@ -35,7 +35,7 @@ If you don't have it installed got to [Python.org](https://www.python.org/downlo
 
 ## Running the tests
 
-To run the tests, run ``python manage.py test hoodapp``
+To run the tests, run ``python manage.py test neighbourhoodapp``
 
 ## Deployment
 
